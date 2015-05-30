@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development Group</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css">
+</head>
+<body id="p-work">
+<div class="wrapper">
+  <header>
+    <div class="logo">
+    <h1>Web Development Group</h1>
+    </div>
+    <nav>
+       <ul>
+           <li id="t-index"><a href="index.html">HOME</a></li>
+           <li id="t-about"><a href="about.html">ABOUT</a></li>
+           <li id="t-services"><a href="services.html">SERVICES</a></li>
+           <li id="t-work"><a href="work.html">WORK</a></li>
+           <li id="t-contact"><a href="contact.html">CONTACT</a></li> 
+      </ul>
+  </nav>
+        </header>
+         <div class="menu-btn" id="menu-btn">
+   <span></span>
+  <span></span>
+  <span></span>
+    </div>
+ <div class="close-btn" id="close-btn">
+  <span></span>
+  <span></span>
+  <span></span>
+  </div>   
+<div class="mobile-nav">
+  <div class="mobile-menu">
+          <ul>
+           <li id="t-index-n"><a href="index.html">HOME</a></li>
+           <li id="t-about-n"><a href="about.html">ABOUT</a></li>
+           <li id="t-services-n"><a href="services.html">SERVICES</a></li>
+           <li id="t-work-n"><a href="work.html">WORK</a></li>
+           <li id="t-contact-n"><a href="contact.html">CONTACT</a></li> 
+      </ul>  
+      </div>
+</div>
+  <div class="headline">
+     <h1> Our Work</h1>
+   </div> 
+    
+    <div class="main_content">
+   <div class="picture">
+    <img src="images/Screen-Shot1.png" alt="screenshot">
+    <p><a  href="http://oit2.scps.nyu.edu/~guelis/assignment7/1-basilica/basilica-start.html" target="_blank">Launch WebSite</a></p>
+   </div>
+
+   <div class="picture">
+    <img src="images/Screen-Shot2.png" alt="screenshot">
+     <p><a href="http://oit2.scps.nyu.edu/~guelis/assignment3/" target="_blank">Launch WebSite</a></p>
+   </div>
+
+   <div class="picture">
+    <img src="images/Screen-Shot3.png" alt="screenshot">
+   <p><a href="http://oit2.scps.nyu.edu/~guelis/midterm2/midterm2.html" target="_blank">Launch WebSite</a></p>
+   </div>
+
+
+   <div class="picture">
+    <img src="images/Screen-Shot4.png" alt="screenshot">
+    <p><a href="http://oit2.scps.nyu.edu/~guelis/midterm1/midterm1.html" target="_blank">Launch WebSite</a></p>
+   </div>
+
+
+   <div class="picture">
+    <img src="images/Screen-Shot5.png" alt="screenshot">
+    <p><a href="http://oit2.scps.nyu.edu/~guelis/complexsite/start.html" target="_blank">Launch WebSite</a></p>
+   </div>
+ 
+ <div class="clear"></div>
+
+ </div>
+ 
+ <div class="clear"></div>
+
+  <footer>
+       <div class="info">
+          <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#careers">Careers</a></li>
+           </ul>
+           <ul class="info_left">
+            <li><a href="work.html">Work</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+       <div class="social">
+       <ul>
+          <li class="icon"><a href="http://www.twitter.com" target="_blank"><img src="images/twitter_icon.png" alt="icon"></a></li>
+          <li class="text"><a href="http://www.twitter.com" target="_blank">Follow us</a></li>
+          <li class="icon"><a href="http://www.facebook.com" target="_blank"><img src="images/fb_icon.png" alt="icon"></a></li>
+          <li class="text"><a href="http://www.facebook.com" target="_blank">Like us</a></li>
+        </ul>
+       </div>
+       <div class="clear"></div>
+       <div class="copyright">
+         <ul>
+           <li><a href="#privacy">Privacy Policy</a></li>
+           <li class="copyright_left"><a href="#terms">Terms of Use</a></li>
+           <li class="copyright_right">@2015 Web Development Group</li>
+         </ul>
+      </div>
+   <div class="clear"></div>
+   </footer>  
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+      $( '.menu-btn' ).click(function(){
+        $('.mobile-menu').addClass('expand')
+        $('.menu-btn').addClass('btn-none')
+          $('.close-btn').addClass('btn-display')
+        })
+      
+       $( '.close-btn' ).click(function(){
+        $('.mobile-menu').removeClass('expand')
+       $('.menu-btn').removeClass('btn-none')
+        $('.close-btn').removeClass('btn-display')
+        })
+    })
+ </script>
+</body>
+</html>

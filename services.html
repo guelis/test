@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development Group</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css">
+</head>
+<body id="p-services">
+<div class="wrapper">
+  <header>
+   <div class="logo">
+    <h1>Web Development Group</h1>
+    </div>
+    <nav>
+       <ul>
+           <li id="t-index"><a href="index.html">HOME</a></li>
+           <li id="t-about"><a href="about.html">ABOUT</a></li>
+           <li id="t-services"><a href="services.html">SERVICES</a></li>
+           <li id="t-work"><a href="work.html">WORK</a></li>
+           <li id="t-contact"><a href="contact.html">CONTACT</a></li> 
+      </ul>
+  </nav>
+     </header>
+         <div class="menu-btn" id="menu-btn">
+   <span></span>
+  <span></span>
+  <span></span>
+    </div>
+ <div class="close-btn" id="close-btn">
+  <span></span>
+  <span></span>
+  <span></span>
+  </div>   
+<div class="mobile-nav">
+  <div class="mobile-menu">
+          <ul>
+           <li id="t-index-n"><a href="index.html">HOME</a></li>
+           <li id="t-about-n"><a href="about.html">ABOUT</a></li>
+           <li id="t-services-n"><a href="services.html">SERVICES</a></li>
+           <li id="t-work-n"><a href="work.html">WORK</a></li>
+           <li id="t-contact-n"><a href="contact.html">CONTACT</a></li> 
+      </ul>
+     </div>
+</div>
+   
+<div class="headline">
+     <h1> Services</h1>
+   </div> 
+
+    <div class="main_content2">
+   <div id="web-design">
+    <h2>Website Development</h2>
+    <img src="images/web-design.png" alt="icon"><p class="text2">Custom websites and easy-to-use content management solutions that are scalable, robust and cross browser compatible. Our team has knowledge and experience in all web technologies.Using the best-in-class technology, we build websites that perform. With a full team of developers working on cutting-edge solutions, we customize interactive development for every client need.</p>
+    </div>
+    <aside>
+      <ul>
+        <li><a href="#responsive">Responsive Website Development</a></li>
+        <li><a href="#content-management-systems">Content Management Systems</a></li>
+        <li><a href="#search-engine-optimization">Search Engine Optimization </a></li>
+        </ul>
+     </aside> 
+   
+
+   <div id="ecommerce">
+    <h2>eCommerce Solutions</h2>
+    <img src="images/ecommerce.png" alt="icon"><p class="text3">Our team will collaborate with you to understand your online objectives and goals, using that information to build a secure and reliable web-based storefront. Our ecommerce websites are built to make the buying process as simple and enjoyable as possible for the user. That is why each of our clients see increases in traffic, sales, and repeat visitors.</p>
+   </div>
+    <aside>
+      <ul>
+        <li><a href="#web-based-store-front">Web Based Store Front</a></li>
+        <li><a href="#web-site-management">Web Site Management</a></li>
+        <li><a href="#dynamic-shopping-cart">Dynamic Shopping Cart</a></li>
+        
+      </ul>
+</aside> 
+  
+
+
+  <div id="mobile">
+    <h2>Mobile Applications</h2>
+    <img src="images/mobile.png" alt="icon"><p class="text3">Our team specializes in developing mobile applications that deliver on quality, performance and speed.For each mobile application we go through an intensive planning
+process, which focuses on the needs of the user and ensures that their mobile
+experience will be conducive to achieving your business objectives.Our team plans, designs, and develops stunning mobile applications.</p>
+  </div>
+   <aside class="mobile">
+       <ul>
+         <li><a href="#iphone-development">IPhone Development</a></li>
+         <li><a href="#ipad-development">IPad Development </a></li>
+         <li><a href="#andriod-development">Andriod Development </a></li>
+      </ul>
+</aside> 
+ </div>
+     <div class="clear"></div>
+     <footer>
+       <div class="info">
+          <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#careers">Careers</a></li>
+           </ul>
+           <ul class="info_left">
+            <li><a href="work.html">Work</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+       <div class="social">
+       <ul>
+          <li class="icon"><a href="http://www.twitter.com" target="_blank"><img src="images/twitter_icon.png" alt="icon"></a></li>
+          <li class="text"><a href="http://www.twitter.com" target="_blank">Follow us</a></li>
+          <li class="icon"><a href="http://www.facebook.com" target="_blank"><img src="images/fb_icon.png" alt="icon"></a></li>
+          <li class="text"><a href="http://www.facebook.com" target="_blank">Like us</a></li>
+        </ul>
+       </div>
+       <div class="clear"></div>
+       <div class="copyright">
+         <ul>
+           <li><a href="#privacy">Privacy Policy</a></li>
+           <li class="copyright_left"><a href="#terms">Terms of Use</a></li>
+           <li class="copyright_right">@2015 Web Development Group</li>
+         </ul>
+      </div>
+   <div class="clear"></div>
+   </footer>  
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+      $( '.menu-btn' ).click(function(){
+        $('.mobile-menu').addClass('expand')
+        $('.menu-btn').addClass('btn-none')
+          $('.close-btn').addClass('btn-display')
+        })
+      
+       $( '.close-btn' ).click(function(){
+        $('.mobile-menu').removeClass('expand')
+       $('.menu-btn').removeClass('btn-none')
+        $('.close-btn').removeClass('btn-display')
+        })
+    })
+ </script>
+</body>
+</html>
