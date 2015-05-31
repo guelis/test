@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixafy</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" media="screen" href="css/mobile.css" />
+
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div class="pixafy_logo"><a href="#"><img src="images/pixafy_logo.png"  alt="logo"></a></div>
+    <nav>
+       <ul>
+          <li><a href="#about">ABOUT</a></li>
+           <li><a href="#services">SERVICES</a></li>
+           <li><a href="#work">WORK</a></li>
+           <li><a href="#blog">BLOG</a></li>
+           <li><a href="#contact">CONTACT</a></li>	
+      </ul>
+  </nav>
+         <div class="menu-btn" id="menu-btn">
+   <span></span>
+  <span></span>
+  <span></span>
+    </div>
+ <div class="close-btn" id="close-btn">
+    <span>X</span>
+  </div>   
+<div class="mobile-nav">
+  <div class="mobile-menu">
+          <ul>
+           <li><a href="#about">ABOUT</a></li>
+           <li><a href="#services">SERVICES</a></li>
+           <li><a href="#work">WORK</a></li>
+           <li><a href="#blog">BLOG</a></li>
+           <li><a href="#contact">CONTACT</a></li>
+        </ul>
+     </div>
+</div>
+   </header>
+     <div class="headline">
+     <p> you think it, we build it</p>
+   </div>
+   <div class="gray_box">
+  <p class="top">We are a company of expert developers based in New York City.<br /> 
+Partner with us to achieve your business goals through technology.</p> <p>Our talented and experienced team has over 10 years of experience developing world-class</p><p> websites and applications, and we leverage the latest technologies, content management</p><p class="bottom"> solutions, open source platforms, and web standards to solve any challenge.</p> 
+       <div class="learn_more">
+       <p><a href="#about"> Learn More</a></p>
+       </div>
+    </div>
+    <div id="black_box"></div>
+  <footer>
+       <div class="info">
+           <ul>
+              <li><a href="#about">About Pixify</a></li>
+              <li><a href="#ourteam">Our Team</a></li>
+              <li><a href="#careers">Careers</a></li>
+           </ul>
+           <ul class="info_left">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="info_left">
+            <li>443 Park Ave. South, Suite 601</li>
+            <li>New York, NY 10015</li>
+            <li>631-351-0521</li>
+          </ul>
+          <ul class="info_right">
+            <li><a href="mailto:info@pixify.com">info@pixify.com</a></li>
+         </ul>
+       </div>
+       <div class="social">
+       <ul>
+          <li class="icon"><a href="http://www.twitter.com" target="_blank"><img src="images/twitter_icon.png" alt="icon"></a></li>
+          <li class="text"><a href="http://www.twitter.com" target="_blank">Follow us</a></li>
+          <li class="icon"><a href="http://www.facebook.com" target="_blank"><img src="images/fb_icon.png" alt="icon"></a></li>
+          <li class="text"><a href="http://www.facebook.com" target="_blank">Like us</a></li>
+        </ul>
+       </div>
+       
+       <div class="copyright">
+         <ul>
+           <li><a href="#privacy">Privacy Policy</a></li>
+           <li class="copyright_left"><a href="#terms">Terms of Use</a></li>
+           <li class="copyright_right">@2011 Pixafy</li>
+         </ul>
+      </div>
+   </footer>	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+$(
+  document).ready(function() {
+$.getJSON("sections.json",function(data) {
+$.each(data, function(i, data) {
+var data =
+"<div class='cat'><p class='title'><a>"+data.title+"</p></a><p class='img'><img src='"+data.image+"'></p><p class='teaser'><a>"+
+data.teaser+"</a></p><p class='url'><a href='"+data.url+"'>Learn More</a></p></div>";
+$(data).appendTo("#black_box");
+})
+}
+);
+return false;
+});
+});
+</script>
+<script type="text/javascript">
+  $(function(){
+      $( '.menu-btn' ).click(function(){
+        $('.mobile-menu').addClass('expand')
+        $('.menu-btn').addClass('btn-none')
+          $('.close-btn').addClass('btn-display')
+        })
+      
+       $( '.close-btn' ).click(function(){
+        $('.mobile-menu').removeClass('expand')
+       $('.menu-btn').removeClass('btn-none')
+        $('.close-btn').removeClass('btn-display')
+        })
+    })
+ </script>
+</body>
+</html>
